@@ -1,7 +1,7 @@
 # Quality Assurance & Test Engineering Repository
 
 ## Overview
-This repository contains the comprehensive quality engineering test suite for **Huntd**, an enterprise Web3 talent marketplace and recruitment platform. The test architecture has been systematically audited, refactored, and optimized using formal test design techniques—including Equivalence Partitioning (EP), Boundary Value Analysis (BVA), Role-Based Access Control (RBAC) Decision Matrices, and State Transition Modeling—reducing redundant test cases by over 80% while expanding critical path, edge case, and security coverage.
+This repository contains the comprehensive quality engineering test suite for recruitment platform. The test architecture has been systematically audited, refactored, and optimized using formal test design techniques - including Equivalence Partitioning (EP), Boundary Value Analysis (BVA), Role-Based Access Control (RBAC) Decision Matrices, and State Transition Modeling—reducing redundant test cases by over 80% while expanding critical path, edge case, and security coverage.
 
 ## Scope & Module Architecture
 
@@ -35,44 +35,6 @@ To ensure high defect-detection capability and ISO/IEC/IEEE 29119 compliance wit
 3. **Decision Matrix (RBAC)**: Consolidated visual display and interaction rules across Guest, Candidate, and Recruiter roles into multi-role verification matrices.
 4. **State Transition Modeling**: Leveraged to model multi-step onboarding setup wizards, offer dispatches, contact unlocking, chat archiving, and session persistence across page refreshes.
 
-## Test Suite Execution Summary
-
-| Module Specification File | Core Domain Area | Optimization Approach |
-| :--- | :--- | :--- |
-| `header.md` | Header & Dynamic Navigation | RBAC Decision Matrix, Viewport Responsiveness |
-| `footer.md` | Footer & Social Networks | Link Matrix Consolidation, Conditional Banner Display |
-| `global-elements.md` | Floating Widgets & Modals | Sticky Positioning, Form Lifecycle Merging |
-| `sign-up.md` | Registration & Role Selection | EP/BVA Rules, OAuth Redirection Grids |
-| `sign_in.md` | Authentication & Recovery | Credential Logic, Password Reset Engine |
-| `candidate-profile-setup.md` | Candidate Onboarding Wizard | BVA Skill/Salary Limits, File Upload Matrices |
-| `recruiter-profile-setup.md` | Recruiter Onboarding Wizard | Step Persistence, Mass Outreach Double-Click Rules |
-| `edit_profile.md` | Profile Maintenance | Dual-Role Isolation, Persistence & Rollback Logic |
-| `chat.md` | Real-Time Messaging & Offers | State Transitioning, Privacy Contact Masking |
-| `web3-companies.md` | Web3 Directory | Pagination Math, Hover & External Tab Links |
-| `home-switch.md` | Landing Pages & App Promotion | Review Carousel Mechanics, Email Capture Logic |
-| `jobs.md` | Vacancy Feed & Postings | ATS Import Engine, 1-Click Apply State Engine |
-| `candidates.md` | Search & Candidate Filtering | Multi-Filter Combination, Timezone Map Logic |
-
 ## Tools & Framework Compliance
-- **Test Management**: ISO/IEC/IEEE 29119 structured Markdown test cases.
-- **Automation Compatibility**: Structured for direct mapping into **Playwright** / **Cypress** data-driven test suites using JSON/CSV parameter fixtures.
-- **API / UI Verification**: Chrome DevTools, Network Payload Inspection, Postman.
 
 ## Repository Structure
-
-```
-├── README.md                      # Repository overview and QA methodology guide
-├── header.md                      # Header Navigation test specifications
-├── footer.md                      # Global Footer test specifications
-├── global-elements.md             # Floating UI Widgets test specifications
-├── sign-up.md                     # Registration & Role Switch test specifications
-├── sign_in.md                     # Authentication & Password Recovery test specifications
-├── candidate-profile-setup.md     # Candidate Onboarding Wizard test specifications
-├── recruiter-profile-setup.md     # Recruiter Onboarding Wizard test specifications
-├── edit_profile.md                # Profile Editing & Dual-Role Management test specifications
-├── chat.md                        # Real-Time Chat & Job Offers test specifications
-├── web3-companies.md              # Web3 Company Directory test specifications
-├── home-switch.md                 # Landing Page Switch test specifications
-├── jobs.md                        # Job Board & Posting test specifications
-└── candidates.md                  # Candidate Search & Filter test specifications
-```
